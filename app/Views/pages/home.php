@@ -4,6 +4,9 @@
 <!-- setelah itu beritahu mana contentnya -->
 <?= $this->section('content'); ?>
 <div class="container">
+    <p>
+    <h1 class="bg-blue-600 text-center p-1 text-white">All Product</h1>
+    </p>
     <!-- pencarian -->
     <div class="row">
         <div class="col-md-6 mt-3">
