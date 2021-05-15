@@ -21,6 +21,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/admin">Admin</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/auth/login">LogIn</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/auth/register">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/auth/logout">LogOut</a>
+                </li>
             </ul>
         </div>
     </div>

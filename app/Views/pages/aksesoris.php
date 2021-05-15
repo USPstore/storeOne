@@ -3,13 +3,15 @@
 <!-- setelah itu beritahu mana contentnya -->
 <?= $this->section('content'); ?>
 <div class="container">
+
     <div class="row">
         <div class="col d-flex justify-content-center mb-1 mt-1">
-            <span class="badge bg-danger mb-3 p-2">Kategori Kaos</span>
+            <span class="badge bg-danger p-2 mb-3">Kategori Aksesoris</span>
         </div>
     </div>
+
     <div class="row">
-        <?php foreach ($produkKaos as $p) : ?>
+        <?php foreach ($produkAksesoris as $p) : ?>
             <div class="col-md-4">
                 <div class="card mb-3">
                     <img src="/image/<?= $p["icon_produk"]; ?>" class="card-img-top" alt="...">

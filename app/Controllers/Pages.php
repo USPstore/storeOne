@@ -57,4 +57,25 @@ class Pages extends BaseController
         // engine templating
         return view('pages/kontak', $data);
     }
+
+    public function kaos()
+    {
+        // menjalankan model getkaos
+        $data = [
+            'title' => 'HOME | USP',
+            'produkKaos' => $this->Produk->getKaos()
+        ];
+
+        return view('pages/kaos', $data);
+    }
+    public function aksesoris()
+    {
+        // menjalankan model getkaos
+        $data = [
+            'title' => 'HOME | USP',
+            'produkAksesoris' => $this->Produk->getAksesoris()
+        ];
+
+        return view('pages/aksesoris', $data);
+    }
 }

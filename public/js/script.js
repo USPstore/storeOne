@@ -14,3 +14,10 @@ function previewImage(){
     }
 
 }
+
+const kaos=document.getElementById('#kategorikaos');
+function ubahKategori(){
+   kaos.textContent='<?php foreach ($produkKaos as $p) : ?>' ;
+}
+const katKaos=document.querySelector('.kaosPolos');
+katKaos.onclick=ubahKategori();

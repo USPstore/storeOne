@@ -28,4 +28,12 @@ class ProdukModel extends Model
         // atau bisa ditulis
         return $this->table('produk')->like('nama_produk', $keyword)->orLike('kode_produk', $keyword);
     }
+    public function getKaos()
+    {
+        return $this->where('kategori', 'kaos')->findAll();
+    }
+    public function getAksesoris()
+    {
+        return $this->where('kategori', 'aksesoris')->findAll();
+    }
 }

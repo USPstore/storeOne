@@ -9,7 +9,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-
     <title><?= $title; ?></title>
 </head>
 
@@ -17,6 +16,16 @@
     <!-- memanggil navbar -->
 
     <?= $this->include('layout/navbar'); ?>
+    <div class="row">
+        <div class="col d-flex justify-content-center mb-3 mt-3">
+            <!-- Kategori -->
+            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <a href="/pages" class="btn btn-outline-primary btn-sm">Semua Produk</a>
+                <a href="/pages/kaos" class="btn btn-outline-primary btn-sm kaosPolos">Kaos Polos</a>
+                <a href="/pages/aksesoris" class="btn btn-outline-primary btn-sm aksesoris">Aksesoris</a>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Disini akan diisi content dari setiap halaman yg meload template -->
@@ -35,9 +44,6 @@
 
     <!-- Menjalankan js -->
     <script src="/js/script.js"></script>
-
-
-
 </body>
 
 </html>
